@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Sistema de Autenticación</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="login-box">
+            <div class="login-header">
+                <h1>Iniciar Sesión</h1>
+            </div>
+            
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="username">Usuario</label>
+                    <input type="text" id="username" name="username" placeholder="Ingresa tu usuario" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="password">Contraseña</label>
+                    <input type="password" id="password" name="password" placeholder="Ingresa tu contraseña" required>
+                </div>
+                
+                <button type="submit" class="btn-login">Iniciar Sesión</button>
+                
+                <div id="message" class="message"></div>
+            </form>
+            
+            <div class="demo-credentials">
+                <p><strong>Credenciales de prueba:</strong></p>
+                <p>Usuario: <code>admin</code> / Contraseña: <code>admin123</code></p>
+                <p>Usuario: <code>usuario</code> / Contraseña: <code>usuario123</code></p>
+            </div>
+        </div>
+    </div>
+    
+    <script src="login.js"></script>
+</body>
+</html>
